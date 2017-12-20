@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/william/Documents/Projects/Magspoof/magspoof.sch</source>
+    <date>Thu Dec  7 22:30:32 2017</date>
+    <tool>Eeschema 4.0.4-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>magspoof.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="IC1">
+      <value>ATTINY85-S</value>
+      <footprint>SO8-200</footprint>
+      <libsource lib="atmel" part="ATTINY85-S"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29B085</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>3.7v LiPo</value>
+      <libsource lib="device" part="Battery"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29B249</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29B470</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100ohm</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29B602</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>Fire!</value>
+      <libsource lib="device" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29B69D</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>DRV8835DSSR</value>
+      <footprint>SON50P200X300X80-13N</footprint>
+      <datasheet>http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=drv8835&amp;amp;fileType=pdf</datasheet>
+      <fields>
+        <field name="Description">Dual Low Voltage H-Bridge 1.5A WSON12EP Texas Instruments DRV8835DSSR Stepper Motor Driver IC, 11 V 1.5A, 12-Pin WSON</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">8136485P</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">DRV8835DSSR</field>
+        <field name="Height">0.8</field>
+      </fields>
+      <libsource lib="DRV8835DSSR" part="DRV8835DSSR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29B9E5</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100uF</value>
+      <libsource lib="device" part="CP1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29C3A3</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>Coil</value>
+      <libsource lib="device" part="L_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A29C49F</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2A0D2E</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>Select</value>
+      <libsource lib="device" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2A0ECB</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="atmel" part="ATTINY25-S">
+      <aliases>
+        <alias>ATTINY45-S</alias>
+        <alias>ATTINY85-S</alias>
+      </aliases>
+      <description>SO8 Wide, 2k Flash, 128B SRAM, 128B EEPROM, Debug Wire</description>
+      <docs>http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ATTINY25-S</field>
+        <field name="Footprint">SO8-200</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB5(~RESET~/dW/ADC0/PCINT5)" type="BiDi"/>
+        <pin num="2" name="PB3(XTAL1/CLKI/OC1B/ADC3/PCINT3)" type="BiDi"/>
+        <pin num="3" name="PB4(XTAL2/CLKO/OC1B/ADC2/PCINT4)" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)" type="BiDi"/>
+        <pin num="6" name="PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)" type="BiDi"/>
+        <pin num="7" name="PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2)" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Battery">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP1">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>SMD*_Pol</fp>
+        <fp>C_Axial*</fp>
+        <fp>C_Radial*</fp>
+        <fp>c_elec*</fp>
+        <fp>C*elec</fp>
+        <fp>TantalC*</fp>
+        <fp>CP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="DRV8835DSSR" part="DRV8835DSSR">
+      <description>Dual Low Voltage H-Bridge 1.5A WSON12EP Texas Instruments DRV8835DSSR Stepper Motor Driver IC, 11 V 1.5A, 12-Pin WSON</description>
+      <docs>http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=drv8835&amp;amp;fileType=pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">DRV8835DSSR</field>
+        <field name="Footprint">SON50P200X300X80-13N</field>
+        <field name="Datasheet">http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=drv8835&amp;amp;fileType=pdf</field>
+        <field name="Description">Dual Low Voltage H-Bridge 1.5A WSON12EP Texas Instruments DRV8835DSSR Stepper Motor Driver IC, 11 V 1.5A, 12-Pin WSON</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">8136485P</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">DRV8835DSSR</field>
+        <field name="Height">0.8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VM" type="unspc"/>
+        <pin num="2" name="AOUT1" type="unspc"/>
+        <pin num="3" name="AOUT2" type="unspc"/>
+        <pin num="4" name="BOUT1" type="unspc"/>
+        <pin num="5" name="BOUT2" type="unspc"/>
+        <pin num="6" name="GND" type="unspc"/>
+        <pin num="7" name="BIN2/BENBL" type="unspc"/>
+        <pin num="8" name="BIN1/BPHASE" type="unspc"/>
+        <pin num="9" name="AIN2/AENBL" type="unspc"/>
+        <pin num="10" name="AIN1/APHASE" type="unspc"/>
+        <pin num="11" name="MODE" type="unspc"/>
+        <pin num="12" name="VCC" type="unspc"/>
+        <pin num="13" name="GND_(THERMAL_PAD)" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <footprints>
+        <fp>LED-*</fp>
+        <fp>LED_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L_Small">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="SW_PUSH">
+      <description>Button</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="atmel">
+      <uri>/usr/share/kicad/library/atmel.lib</uri>
+    </library>
+    <library logical="DRV8835DSSR">
+      <uri>/home/william/Documents/Projects/Magspoof/DRV8835DSSR/KiCad/DRV8835DSSR.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(IC2-Pad2)">
+      <node ref="L1" pin="1"/>
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="2" name="Net-(IC1-Pad6)">
+      <node ref="IC2" pin="11"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="3" name="Net-(IC1-Pad5)">
+      <node ref="IC2" pin="10"/>
+      <node ref="IC1" pin="5"/>
+    </net>
+    <net code="4" name="Net-(IC2-Pad3)">
+      <node ref="L1" pin="2"/>
+      <node ref="IC2" pin="3"/>
+    </net>
+    <net code="5" name="Net-(IC2-Pad8)">
+      <node ref="IC2" pin="8"/>
+    </net>
+    <net code="6" name="Net-(IC2-Pad7)">
+      <node ref="IC2" pin="7"/>
+    </net>
+    <net code="7" name="Net-(IC2-Pad5)">
+      <node ref="IC2" pin="5"/>
+    </net>
+    <net code="8" name="Net-(IC2-Pad4)">
+      <node ref="IC2" pin="4"/>
+    </net>
+    <net code="9" name="Net-(IC1-Pad1)">
+      <node ref="IC1" pin="1"/>
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="10" name="Net-(D2-Pad2)">
+      <node ref="IC1" pin="3"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="11" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="12" name="Net-(BT1-Pad1)">
+      <node ref="IC1" pin="8"/>
+      <node ref="IC2" pin="1"/>
+      <node ref="BT1" pin="1"/>
+      <node ref="IC2" pin="12"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="13" name="Net-(IC1-Pad7)">
+      <node ref="SW1" pin="1"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="14" name="Net-(BT1-Pad2)">
+      <node ref="IC2" pin="13"/>
+      <node ref="C1" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="IC2" pin="6"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="15" name="Net-(D1-Pad2)">
+      <node ref="IC2" pin="9"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,261 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DRV8835DSSR
+LIBS:magspoof-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-S IC1
+U 1 1 5A29B085
+P 6850 3200
+F 0 "IC1" H 5700 3600 50  0000 C CNN
+F 1 "ATTINY85-S" H 7850 2800 50  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 7800 3200 50  0001 C CIN
+F 3 "" H 6850 3200 50  0000 C CNN
+	1    6850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 5A29B249
+P 8650 3150
+F 0 "BT1" H 8750 3200 50  0000 L CNN
+F 1 "3.7v LiPo" H 8750 3100 50  0000 L CNN
+F 2 "Wire_Pads:SolderWirePad_2x_2mmDrill" V 8650 3190 50  0001 C CNN
+F 3 "" V 8650 3190 50  0000 C CNN
+	1    8650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5A29B470
+P 5300 3850
+F 0 "D2" H 5300 3950 50  0000 C CNN
+F 1 "LED" H 5300 3750 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5300 3850 50  0001 C CNN
+F 3 "" H 5300 3850 50  0000 C CNN
+	1    5300 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R 100ohm1
+U 1 1 5A29B602
+P 5300 4350
+F 0 "100ohm1" V 5380 4350 50  0000 C CNN
+F 1 "R1" V 5300 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5230 4350 50  0001 C CNN
+F 3 "" H 5300 4350 50  0000 C CNN
+	1    5300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 5A29B69D
+P 4800 3950
+F 0 "SW1" H 4950 4060 50  0000 C CNN
+F 1 "Fire!" H 4800 3870 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 4800 3950 50  0001 C CNN
+F 3 "" H 4800 3950 50  0000 C CNN
+	1    4800 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L DRV8835DSSR IC2
+U 1 1 5A29B9E5
+P 2600 2900
+F 0 "IC2" H 3600 3050 50  0000 C CNN
+F 1 "DRV8835DSSR" H 3600 2150 50  0000 C CNN
+F 2 "DRV8835DSSR:SON50P200X300X80-13N" H 3600 2050 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=drv8835&amp;fileType=pdf" H 3600 1950 50  0001 C CNN
+F 4 "Dual Low Voltage H-Bridge 1.5A WSON12EP Texas Instruments DRV8835DSSR Stepper Motor Driver IC, 11 V 1.5A, 12-Pin WSON" H 3600 1850 50  0001 C CNN "Description"
+F 5 "RS" H 3600 1750 50  0001 C CNN "Supplier_Name"
+F 6 "8136485P" H 3600 1650 50  0001 C CNN "RS Part Number"
+F 7 "Texas Instruments" H 3600 1550 50  0001 C CNN "Manufacturer_Name"
+F 8 "DRV8835DSSR" H 3600 1450 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 3600 1350 50  0001 C CNN "Allied_Number"
+F 10 "" H 3600 1250 50  0001 C CNN "Other Part Number"
+F 11 "0.8" H 4450 1150 50  0001 C CNN "Height"
+	1    2600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 5A29C3A3
+P 2050 4350
+F 0 "C1" H 2075 4450 50  0000 L CNN
+F 1 "100uF" H 2075 4250 50  0000 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 2050 4350 50  0001 C CNN
+F 3 "" H 2050 4350 50  0000 C CNN
+	1    2050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 5A29C49F
+P 1750 3100
+F 0 "L1" H 1780 3140 50  0000 L CNN
+F 1 "Coil" H 1780 3060 50  0000 L CNN
+F 2 "Wire_Pads:SolderWirePad_2x_2mmDrill" H 1750 3100 50  0001 C CNN
+F 3 "" H 1750 3100 50  0000 C CNN
+	1    1750 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A2A0D2E
+P 5050 3850
+F 0 "D1" H 5050 3950 50  0000 C CNN
+F 1 "LED" H 5050 3750 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5050 3850 50  0001 C CNN
+F 3 "" H 5050 3850 50  0000 C CNN
+	1    5050 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 5A2A0ECB
+P 4500 3950
+F 0 "SW2" H 4650 4060 50  0000 C CNN
+F 1 "Select" H 4500 3870 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 4500 3950 50  0001 C CNN
+F 3 "" H 4500 3950 50  0000 C CNN
+	1    4500 3950
+	0    1    1    0   
+$EndComp
+NoConn ~ 2600 3200
+NoConn ~ 2600 3300
+NoConn ~ 2600 3500
+NoConn ~ 4600 3400
+Wire Wire Line
+	8650 2200 8650 3000
+Wire Wire Line
+	2050 2200 8650 2200
+Wire Wire Line
+	8650 4700 2050 4700
+Wire Wire Line
+	8650 3300 8650 4700
+Connection ~ 8650 2950
+Connection ~ 8650 3450
+Wire Wire Line
+	8200 3450 8650 3450
+Wire Wire Line
+	5300 4050 5300 4200
+Wire Wire Line
+	5300 4500 5300 4700
+Wire Wire Line
+	5050 3250 5500 3250
+Wire Wire Line
+	4800 3650 4800 3150
+Wire Wire Line
+	4800 3150 5500 3150
+Wire Wire Line
+	4800 4250 4800 4700
+Connection ~ 4800 4700
+Wire Wire Line
+	2050 4700 2050 4500
+Wire Wire Line
+	2050 4200 2050 2200
+Wire Wire Line
+	2600 3400 2400 3400
+Wire Wire Line
+	2400 2600 2400 4700
+Connection ~ 2400 4700
+Wire Wire Line
+	4600 3000 4800 3000
+Wire Wire Line
+	4800 3000 4800 2200
+Connection ~ 4800 2200
+Wire Wire Line
+	4600 2600 2400 2600
+Connection ~ 2400 3400
+Wire Wire Line
+	1750 3000 2600 3000
+Wire Wire Line
+	1850 3100 2600 3100
+Wire Wire Line
+	1850 3100 1850 3200
+Wire Wire Line
+	1850 3200 1750 3200
+Wire Wire Line
+	2600 2900 2600 2200
+Connection ~ 2600 2200
+Wire Wire Line
+	4600 3300 5050 3300
+Wire Wire Line
+	5050 3250 5050 3650
+Wire Wire Line
+	5500 2950 4700 2950
+Wire Wire Line
+	4700 2950 4700 3200
+Wire Wire Line
+	4700 3200 4600 3200
+Wire Wire Line
+	4600 3100 5200 3100
+Wire Wire Line
+	5200 3100 5200 3050
+Wire Wire Line
+	5200 3050 5500 3050
+Wire Wire Line
+	5300 3650 5300 3350
+Wire Wire Line
+	5300 3350 5500 3350
+Connection ~ 5050 3300
+Wire Wire Line
+	4500 3650 4500 3450
+Wire Wire Line
+	4500 3450 5500 3450
+Wire Wire Line
+	4500 4250 4500 4700
+Connection ~ 4500 4700
+Wire Wire Line
+	5050 4100 5300 4100
+Connection ~ 5300 4100
+Connection ~ 5050 4100
+Wire Wire Line
+	5050 4100 5050 4050
+Connection ~ 5300 4700
+Wire Wire Line
+	4600 2600 4600 2900
+Wire Wire Line
+	8200 2950 8650 2950
+$EndSCHEMATC
