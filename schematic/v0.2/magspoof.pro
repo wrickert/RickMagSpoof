@@ -1,4 +1,4 @@
-update=Sun Dec 10 22:50:58 2017
+update=Wed Dec 20 16:04:47 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../libraries/DRV8835DSSR/KiCad
@@ -163,3 +161,5 @@ LibName131=/home/william/Documents/Projects/Magspoof/kicad-library/library/wizne
 LibName132=/home/william/Documents/Projects/Magspoof/kicad-library/library/xilinx
 LibName133=/home/william/Documents/Projects/Magspoof/kicad-library/library/zetex
 LibName134=/home/william/Documents/Projects/Magspoof/schematic/libraries/STM32F042G6U6/KiCad/STM32F042G6U6
+[general]
+version=1

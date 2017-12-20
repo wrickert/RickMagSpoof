@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/william/Documents/Projects/Magspoof/schematic/v0.2/magspoof.sch)
-    (date "Mon Dec 18 15:57:05 2017")
+    (date "Wed Dec 20 15:01:06 2017")
     (tool "Eeschema 4.0.4-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -67,7 +67,7 @@
       (tstamp 5A2E44D1))
     (comp (ref IC1)
       (value STM32F042G6U6)
-      (footprint Housings_DFN_QFN:QFN-24_4x4mm_Pitch0.5mm)
+      (footprint STM32F042G6U6:QFN50P400X400X60-28N)
       (datasheet http://www.st.com/content/ccc/resource/technical/document/datasheet/52/ad/d0/80/e6/be/40/ad/DM00105814.pdf/files/DM00105814.pdf/jcr:content/translations/en.DM00105814.pdf)
       (fields
         (field (name Description) "STMICROELECTRONICS - STM32F042G6U6 - MCU, 32BIT, CORTEX-M0, 48MHZ, UFQFN-28")
@@ -385,14 +385,14 @@
         (pin (num 4) (name GND) (type power_in))
         (pin (num 5) (name shield) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
-    (library (logical Battery_Management)
-      (uri /home/william/Documents/Projects/Magspoof/kicad-library/library/Battery_Management.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
     (library (logical DRV8835DSSR)
       (uri /home/william/Documents/Projects/Magspoof/schematic/libraries/DRV8835DSSR/KiCad/DRV8835DSSR.lib))
+    (library (logical Battery_Management)
+      (uri /home/william/Documents/Projects/Magspoof/kicad-library/library/Battery_Management.lib))
     (library (logical STM32F042G6U6)
       (uri /home/william/Documents/Projects/Magspoof/schematic/libraries/STM32F042G6U6/KiCad/STM32F042G6U6.lib)))
   (nets
